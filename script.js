@@ -38,7 +38,7 @@ function operate(a, b, operator) {
             return divide(a, b);
             break;
         default:
-            return 'Not a valid operation';
+            return 'Not a valid operation: ';
     }
 }
 
@@ -69,10 +69,15 @@ function calculateResult() {
     const numbers = tokens.filter(token => /\d+(\.\d+)?/.test(token)).map(Number);
     let result = operate(numbers[0], numbers[1], operators[0]);
     if(operators.length === numbers.length) {
-        for(let i = 1; i < operators.length - 1; i++) {
-            result = operate(result, numbers[i+1], operators[i]);
+        if(operators.length === 1) {
+            creen.textContent = "Syntax Error";
         }
-        creen.textContent = `${result}${operators[operators.length - 1]}`;
+        else {
+            for(let i = 1; i < operators.length - 1; i++) {
+                result = operate(result, numbers[i+1], operators[i]);
+            }
+            creen.textContent = `${result}${operators[operators.length - 1]}`;
+        }
     }
     else {
         for(let i = 1; i < operators.length; i++) {

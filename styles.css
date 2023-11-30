@@ -7,6 +7,7 @@ body {
 
 
 .calc {
+    box-shadow: 0 1 20px rgba(0, 0, 0, 0.5);
     border: black 2px solid;
     background-color: black;
     padding: 20px;
@@ -30,6 +31,17 @@ body {
 .row {
     display: flex;
     flex: 1;
+}
+.nbr {
+    background-color: lightsalmon;
+}
+
+.op {
+    background-color: olive;
+}
+
+.bb {
+    background-color:lawngreen;
 }
 
 button {
