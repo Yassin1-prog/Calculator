@@ -14,7 +14,7 @@
         <div class="screen"></div>
         <div class="row">
             <button class="nbr" onclick="handleDisplay('Reset')">Reset</button>
-            <button class="nbr">AC</button>
+            <button class="nbr" onclick="backtrack()">DEL</button>
             <button class="nbr">C</button>
             <button class="op" onclick="handleDisplay('÷')">÷</button>
         </div>
@@ -36,9 +36,9 @@
             <button class="nbr" onclick="handleDisplay('3')">3</button>
             <button class="op" onclick="handleDisplay('-')">-</button>
         </div>
-        <div class="row">
+        <div class="row" id="ford">
             <button class="nbr" onclick="handleDisplay('0')">0</button>
-            <button class="op" onclick="handleDisplay('.')">.</button>
+            <button class="op" id="dot" onclick="handleDisplay('.')">.</button>
             <button class="op" onclick="calculateResult()">=</button>
         </div>
     </div>
