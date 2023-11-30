@@ -13,33 +13,33 @@
     <div class="calc">
         <div class="screen"></div>
         <div class="row">
-            <button class="nbr">Reset</button>
+            <button class="nbr" onclick="handleDisplay('Reset')">Reset</button>
             <button class="nbr">AC</button>
             <button class="nbr">C</button>
-            <button class="op">÷</button>
+            <button class="op" onclick="handleDisplay('÷')">÷</button>
         </div>
         <div class="row">
-            <button class="nbr">7</button>
-            <button class="nbr">8</button>
-            <button class="nbr">9</button>
-            <button class="op">*</button>
+            <button class="nbr" onclick="handleDisplay('7')">7</button>
+            <button class="nbr" onclick="handleDisplay('8')">8</button>
+            <button class="nbr" onclick="handleDisplay('9')">9</button>
+            <button class="op" onclick="handleDisplay('*')">*</button>
         </div>
         <div class="row">
-            <button class="nbr">4</button>
-            <button class="nbr">5</button>
-            <button class="nbr">6</button>
-            <button class="op">+</button>
+            <button class="nbr" onclick="handleDisplay('4')">4</button>
+            <button class="nbr" onclick="handleDisplay('5')">5</button>
+            <button class="nbr" onclick="handleDisplay('6')">6</button>
+            <button class="op" onclick="handleDisplay('+')">+</button>
         </div>
         <div class="row">
-            <button class="nbr">1</button>
-            <button class="nbr">2</button>
-            <button class="nbr">3</button>
-            <button class="op">-</button>
+            <button class="nbr" onclick="handleDisplay('1')">1</button>
+            <button class="nbr" onclick="handleDisplay('2')">2</button>
+            <button class="nbr" onclick="handleDisplay('3')">3</button>
+            <button class="op" onclick="handleDisplay('-')">-</button>
         </div>
         <div class="row">
-            <button class="nbr">0</button>
-            <button class="op">.</button>
-            <button class="op">=</button>
+            <button class="nbr" onclick="handleDisplay('0')">0</button>
+            <button class="op" onclick="handleDisplay('.')">.</button>
+            <button class="op" onclick="calculateResult()">=</button>
         </div>
     </div>
 </body>

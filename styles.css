@@ -8,7 +8,7 @@ body {
 
 .calc {
     border: black 2px solid;
-    background-color: burlywood;
+    background-color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -18,9 +18,13 @@ body {
 }
 
 .screen {
-    padding: 50px;
-    background-color: limegreen;
+    display: flex;
+    background-color: crimson;
     border: black 2px solid;
+    width: 496px;
+    height: 100px;
+    overflow: auto;
+    font-size: 32px;
 }
 
 .row {
