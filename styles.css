@@ -14,15 +14,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
 }
 
 .screen {
     display: flex;
     background-color: crimson;
     border: black 2px solid;
-    width: 496px;
+    width: 346px;
     height: 100px;
     overflow: auto;
     font-size: 32px;
