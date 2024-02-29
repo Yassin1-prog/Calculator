@@ -1,63 +1,73 @@
 body {
-    display: flex;
-    justify-content: center;
-    background-color:darkslategray;
-    padding: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: darkslategray;
+  padding: 120px;
 }
 
-
 .calc {
-    box-shadow: 0 1 20px rgba(0, 0, 0, 0.5);
-    border: black 2px solid;
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
+  box-shadow: 0 1 20px rgba(0, 0, 0, 0.5);
+  border: black 2px solid;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
 }
 
 .screen {
-    display: flex;
-    background-color: crimson;
-    border: black 2px solid;
-    width: 346px;
-    height: 100px;
-    overflow: auto;
-    font-size: 32px;
+  display: flex;
+  background-color: crimson;
+  border: black 2px solid;
+  width: 346px;
+  height: 100px;
+  overflow: auto;
+  font-size: 32px;
 }
 
 .row {
-    display: flex;
-    flex: 1;
+  display: flex;
+  flex: 1;
 }
 .nbr {
-    background-color: lightsalmon;
+  background-color: lightsalmon;
 }
 
 .op {
-    background-color: olive;
+  background-color: olive;
 }
 
 .bb {
-    background-color:lawngreen;
+  background-color: lawngreen;
 }
 
 button {
-    flex: 1;
-    border: black 2px solid;
-    
+  flex: 1;
+  border: black 2px solid;
 }
 
 .op {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .nbr {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 button:hover {
-    background-color: mediumorchid;
+  background-color: mediumorchid;
+}
+
+@media (max-width: 400px) {
+  .calc {
+    width: 250px;
+    height: 250px;
+  }
+
+  .screen {
+    width: 246px;
+    height: 250px;
+  }
 }
